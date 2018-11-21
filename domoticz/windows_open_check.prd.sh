@@ -63,7 +63,6 @@ function f_usage {
   "
 }     
 
-
 ################################################################################
 # MAIN
 ################################################################################
@@ -120,15 +119,6 @@ f_stopping_previous_script
 echo "Current exit"; exit 0;
 f_writing_script_pid_to_file "${SCRIPTLOCK}"
 
-
-
-
-
-
-
-
-
-
 # # List all variables
 # curl -s "${DomoURL}/json.htm?type=command&param=getuservariables"
 
@@ -159,11 +149,7 @@ if [[ ${ASTATUS} == Open ]]; then
 fi
 done
 
-
 f_exit_graceful
-
-
-
 
 # Get value of Domoticz variable ${PROGNAME}_exit_code
 # DomoURL="https://zh1sh.kolovit.com:8443"
